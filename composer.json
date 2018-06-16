@@ -1,0 +1,24 @@
+{
+    "name": "hippy/test",
+    "authors": [
+        {
+            "name": "Karim",
+            "email": "starstruck0207@gmail.com"
+        }
+    ],
+    "require": {
+        "jonnyw/php-phantomjs": "^4.6",
+        "paquettg/php-html-parser": "^1.7"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "PhantomInstaller\\Installer::installPhantomJS"
+        ],
+        "post-update-cmd": [
+            "PhantomInstaller\\Installer::installPhantomJS"
+        ]
+    }
+}
